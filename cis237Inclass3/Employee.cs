@@ -26,7 +26,7 @@ namespace cis237Inclass3
             set { lastName = value; }
         }
 
-        public string FirstName
+        public string Department
         {
             get { return department; }
             set { department = value; }
@@ -38,6 +38,21 @@ namespace cis237Inclass3
             this.firstName = FirstName;
             this.lastName = LastName;
             this.department = Department;
+        }
+
+        public override string ToString()
+        {
+            //return base.ToString();  would be the same result which shows the class name
+
+            return this.FirstName + " " + this.LastName;
+        }
+
+        //protected can only be seen in inherited members.
+        //virtual indicates that subclass is allowed to override
+        protected virtual void PrintFullName()
+        {
+            Console.WriteLine(this.FirstName + " " + this.LastName);
+        
         }
 
 
