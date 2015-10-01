@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cis237Inclass3
 {
-    class Employee
+    abstract class Employee : IEmployee
     {
         //Private variables
         private string firstName;
@@ -51,10 +51,19 @@ namespace cis237Inclass3
         //virtual indicates that subclass is allowed to override
         protected virtual void PrintFullName()
         {
-            Console.WriteLine(this.FirstName + " " + this.LastName);
+          //  Console.WriteLine(this.FirstName + " " + this.LastName);
         
         }
 
+        public abstract decimal CalculateWeeklyGross();
 
+
+
+
+        public virtual string GetDepartmentTwice()
+        {
+            return this.Department + this.Department;
+        }
+     
     }
 }

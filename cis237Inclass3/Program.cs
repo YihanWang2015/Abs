@@ -17,6 +17,8 @@ namespace cis237Inclass3
 
             Console.WriteLine(salaryEmployee.CalculateWeeklyGross());
 
+            Console.WriteLine(salaryEmployee.GetDepartmentTwice());
+
             Console.WriteLine("\n");
             Console.WriteLine("*****************************");
             Console.WriteLine("\n");
@@ -27,6 +29,17 @@ namespace cis237Inclass3
 
             Console.WriteLine(hourlyEmployee.ToString());
             Console.WriteLine(hourlyEmployee.CalculateWeeklyGross());
+
+
+
+    // can't make instance of abstract class
+//            Employee employee = new Employee("D", "B", "d");
+
+
+
+            Console.WriteLine(hourlyEmployee.GetDepartmentTwice());
+
+
         }
     }
 }

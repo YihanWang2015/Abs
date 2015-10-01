@@ -55,10 +55,18 @@ namespace cis237Inclass3
         
         //}
 
-        public decimal CalculateWeeklyGross()
+        public override decimal CalculateWeeklyGross()
         {
             return hourlyRate * (decimal)hoursWorked;
 
+        }
+
+        //overrode the method we originally declared in the interface. then
+        //wrote as virtual  in the employee class.
+        public override string GetDepartmentTwice()
+        {
+            //now it will be 4 times.
+            return base.GetDepartmentTwice() + base.GetDepartmentTwice();
         }
     }
 }

@@ -47,7 +47,7 @@ namespace cis237Inclass3
 
 
         //D: A public method to return the weekly gross for the employee.
-        public decimal CalculateWeeklyGross()
+        public override decimal CalculateWeeklyGross()
         {
             return this.yearlySalary / 52;
         }
